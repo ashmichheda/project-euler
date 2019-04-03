@@ -7,6 +7,7 @@ public class Problem07 {
 
 	public static void main(String[] args) {
 
+		// assigned count 1 for prime number 2
 		int count = 1;
 		int prime = 3, primeNumber = 0;
 		boolean isPrime = true;
