@@ -13,7 +13,7 @@ public class Problem03 {
 				i++;
 		}
 		largestPrimeNum = val;
-		System.out.println(largestPrimeNum +" is the largest prime factor");
+		System.out.println(largestPrimeNum +" is the largest prime factor of: "+val);
 	}
 
 }
