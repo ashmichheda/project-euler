@@ -10,7 +10,8 @@ public class Problem08 {
 		BufferedReader reader;
 		long max = 0, greatestProduct;
 		try {
-			reader = new BufferedReader(new FileReader("D:\\AshmiD\\ASHMI\\GitHub\\Project-Euler-Programs\\Problem08\\Input.txt"));
+			// Add your local Input file path
+			reader = new BufferedReader(new FileReader("Input.txt"));
 			String line = reader.readLine();
 			int length = line.length();
 		
