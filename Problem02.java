@@ -6,8 +6,8 @@ public class Problem02 {
 	public static void main(String[] args) {
 		
 		int m = 1, n = 2, p = 0, sum = 2;
-		
-		while(p < 4000000) {
+		int val = 4000000;
+		while(p < val) {
 			
 			p = m + n;
 			m = n;
