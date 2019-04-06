@@ -24,7 +24,7 @@
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product? */
 
 
-// For the above question, requires storing & reading the number from input file & then processing the logic.
+// The question can be solved by storing & reading the number from input file & then processing the logic.
 
 package com.prog.ProjectEulerPrograms;
 
