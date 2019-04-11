@@ -15,7 +15,8 @@ public class Problem13 {
 		BigInteger sum = new BigInteger("0");
 		
 		try {
-			FileInputStream file = new FileInputStream("D:\\AshmiD\\ASHMI\\GitHub\\Project-Euler-Programs\\Problem13\\input.txt");
+			// Add local file path
+			FileInputStream file = new FileInputStream("input.txt");
 			DataInputStream data = new DataInputStream(file);
 			BufferedReader br = new BufferedReader(new InputStreamReader(data));
 			
