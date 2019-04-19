@@ -11,7 +11,7 @@ public class Problem18 {
 	}
 	
 	
-	private int[][] triangle = {  // Mutable
+	private int[][] triangle = {  // values are mutable
 		{75},
 		{95,64},
 		{17,47,82},
