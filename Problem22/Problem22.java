@@ -7,7 +7,7 @@
 
 For example, when the list is sorted into alphabetical order, 
 COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. 
-So, COLIN would obtain a score of 938 × 53 = 49714.
+So, COLIN would obtain a score of 938 Ã— 53 = 49714.
 
 What is the total of all the name scores in the file?
  */
@@ -61,7 +61,7 @@ public class Problem22 {
 		
 		String namesList[] = fileContent.split(",");
 		List<String> names = new ArrayList<String>();
-		
+		long start = System.currentTimeMillis();
 		// add names to list and sort them alphabetically
 		for(String name : namesList) {
 			names.add(name.substring(1, name.length()-1));
@@ -86,8 +86,9 @@ public class Problem22 {
 			result += sum;
 			
 		}
-		
-		System.out.println("Total namescores is: "+result);		
+		long end = System.currentTimeMillis();
+		System.out.println("Total namescores is: "+result);
+		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
 
 }
