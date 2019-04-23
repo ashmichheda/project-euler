@@ -1,3 +1,6 @@
+// NOTE: Use BigDecimal OR BigInteger. Doesn't work with int or long.
+
+
 package com.prog.ProjectEulerPrograms;
 
 import java.math.BigInteger;
