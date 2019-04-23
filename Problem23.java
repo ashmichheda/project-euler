@@ -1,3 +1,7 @@
+//Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
+// Make code more memory efficient!
+
+
 package com.prog.ProjectEulerPrograms;
 
 public class Problem23 {
