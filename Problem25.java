@@ -14,6 +14,7 @@ public class Problem25 {
 		BigInteger f2 = new BigInteger("1");
 		BigInteger fib = new BigInteger("0");
 		long firstThousandthTerm;
+		long start = System.currentTimeMillis();
 		while(true) {
 			
 			fib = f1.add(f2);
@@ -27,7 +28,9 @@ public class Problem25 {
 				f2 = fib;
 			}
 		}
+		long end = System.currentTimeMillis();
 		System.out.println("Index of the 1st 1000th fib term is: "+firstThousandthTerm);
+		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
 
 }
