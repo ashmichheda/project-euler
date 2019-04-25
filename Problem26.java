@@ -4,8 +4,9 @@ public class Problem26 {
 
 	public static void main(String[] args) {
 		
-		int sequenceLength = 0;
+	int sequenceLength = 0;
         int num = 0;
+	// execution start time
         long start = System.currentTimeMillis();
         for (int i = 1000; i > 1; i--) {
             if (sequenceLength >= i) {
@@ -28,10 +29,10 @@ public class Problem26 {
                 sequenceLength = position - foundRemainders[value];                    
             }
         }
+	// execution end time
         long end = System.currentTimeMillis();
         System.out.println("Value of d is: "+num);
         System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
         
 	}
-
 }
