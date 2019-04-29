@@ -12,7 +12,8 @@ public class Problem29 {
 		int i, j, count = 0;;
 		BigInteger answer = new BigInteger("2");
 		Map<BigInteger, Integer> storedValues = new HashMap<BigInteger, Integer>();
-		
+		// log start time
+		long start = System.currentTimeMillis();
 		for(i = 2; i<= 100; i++) {
 			for(j = 2; j<=100; j++) {
 				answer = BigInteger.valueOf(i);
@@ -27,7 +28,10 @@ public class Problem29 {
 				}
 			}
 		}
+		// log end time
+		long end = System.currentTimeMillis();
 		System.out.println("Distinct terms are: "+count);
+		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
 
 }
