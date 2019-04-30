@@ -9,7 +9,7 @@ public class Problem29 {
 	public static void main(String[] args) {
 		
 		
-		int i, j, count = 0;;
+		int i, j, count = 0;
 		BigInteger answer = new BigInteger("2");
 		Map<BigInteger, Integer> storedValues = new HashMap<BigInteger, Integer>();
 		// log start time
