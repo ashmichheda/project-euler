@@ -1,3 +1,5 @@
+//Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
+
 package com.prog.ProjectEulerPrograms;
 
 public class Problem30 {
