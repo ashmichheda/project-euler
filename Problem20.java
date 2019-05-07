@@ -11,7 +11,7 @@ public class Problem20 {
 		int factorial = 100;
 		BigDecimal fact = findFactorial(factorial);
 		long result = findSumOfFact(fact);
-		System.out.println("Sum of the digits of 100! is: "+result);
+		System.out.println("Sum of the digits of 100 FACTORIAL is: "+result);
 	}
 
 	private static long findSumOfFact(BigDecimal fact) {
