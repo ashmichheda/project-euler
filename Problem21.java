@@ -5,8 +5,6 @@ therefore d(220) = 284. The proper divisors of 284 are 1, 2, 4, 71 and 142; so d
 Evaluate the sum of all the amicable numbers under 10000.
  */
 
-
-
 package com.prog.ProjectEulerPrograms;
 
 public class Problem21 {
@@ -25,7 +23,7 @@ public class Problem21 {
 			num++;
 		}
 		
-		System.out.println("Sum of all the amicable numbers under 10000 is: "+sum);
+		System.out.println("Answer is: "+sum);
 	}
 
 	private static int getDivisors(int a) {
@@ -36,7 +34,6 @@ public class Problem21 {
 			if(a % i == 0)
 				sum += i;
 		}
-		
 		return sum;
 	}
 
@@ -53,10 +50,9 @@ public class Problem21 {
 	
 	private static boolean checkForAmicablePair(int a, int b, int num) {
 		
-		if(num == b && a!= num)
+		if(num == b && a != num)
 			return true;
 		
 		return false;
 	}
-
 }
