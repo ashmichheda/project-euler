@@ -5,12 +5,16 @@ public class Problem12 {
 	public static void main(String[] args) {
 		
 		int number = 0, i = 1;
-		
+		// log start time
+		long start = System.currentTimeMillis();
 		while(numberOfDivisor(number) < 500) {
 			number += i;
 			i++;
 		}
+		// log end time
+		long end = System.currentTimeMillis();
 		System.out.println(number+" is the answer!");
+		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
 
 	private static int numberOfDivisor(int number) {
