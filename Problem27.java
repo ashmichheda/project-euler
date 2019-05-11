@@ -6,7 +6,8 @@ public class Problem27 {
 		
 		int a, b, n, previousCount = 0, count = 1, answer = 0;
 		boolean check = false;
-		
+		// log start time
+		long start = System.currentTimeMillis();
 		for(a = -999; a<1000; a++) {
 			
 			for(b = 2; b<1000; b++) {
@@ -32,8 +33,11 @@ public class Problem27 {
 				check = false;
 			}
 		}
+		// log end time
+		long end = System.currentTimeMillis();
 		System.out.println("Answer is: "+answer);
 		System.out.println("Count is: "+previousCount);
+		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
 
 	private static boolean checkPrime(int n) {
