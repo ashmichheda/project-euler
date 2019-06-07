@@ -1,6 +1,6 @@
-//Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
+/*Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
-/* Straight forward problem, but trick here is to find an upper bound.
+ Straight forward problem, but trick here is to find an upper bound.
  Say 9^5 + 9^5 + 9^5 + 9^5 + 9^5 = 295245, say multiplying it 6 times 6*9^5 = 354294, 
  to round up 355000 can be considered an upper bound */
  
@@ -12,7 +12,7 @@ public class Problem30 {
 
 
 		int i, j, sum = 0, temp, answer = 0;
-		// start time
+		// log start time
 		long start = System.currentTimeMillis();
 		for(i = 2; i<355000; i++) {
 			
@@ -29,9 +29,9 @@ public class Problem30 {
 			}
 			sum = 0;
 		}
+		// log end time
 		long end = System.currentTimeMillis();
 		System.out.println("Answer is: "+answer);
 		System.out.println("Execution time in milliseconds: "+(end - start)+" ms");
 	}
-
 }
