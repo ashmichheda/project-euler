@@ -10,7 +10,6 @@ How many different ways can £2 be made using any number of coins?
 *
 * */
 
-
 package com.ProjectEuler.progs;
 
 public class Problem31 {
@@ -19,6 +18,7 @@ public class Problem31 {
 
         int a, b, c, d, e, f, g;
         int ans = 0, target = 200;
+        // log start time
         long start = System.currentTimeMillis();
         for(a = target; a>=0; a -= 200){
             for(b = a; b>=0; b -= 100){
@@ -36,6 +36,7 @@ public class Problem31 {
             }
         }
         System.out.println("The answer is: "+ans);
+        // log end time
         long end = System.currentTimeMillis();
         System.out.println("Execution time in ms: "+(end-start));
     }
